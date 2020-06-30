@@ -35,6 +35,12 @@ Edit site content on `src/pages/index.js` and `config.js`.
 
 ### Deployment
 
-This site is deployed using Github Pages and will show what's currently on the `master` branch.
+The default branch of this repo is `source`. For more on that, see [this Gatsby documentation](https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio). All changes should be merged into `source`.
 
-To deploy changes to https://imalsky.github.io/ run `npm run deploy`.
+Changes can then be deployed to https://imalsky.github.io/ by running:
+
+ ```sh
+ npm run deploy
+ ```
+
+This will update the `master` branch, which is what Github Pages is watching.
