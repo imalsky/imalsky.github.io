@@ -35,4 +35,6 @@ Edit site content on `src/pages/index.js` and `config.js`.
 
 ### Deployment
 
-Any commits made to the `master` branch will automatically push to https://imalsky.github.io/.
+This site is deployed using Github Pages and will show what's currently on the `master` branch.
+
+To deploy changes to https://imalsky.github.io/ run `npm run deploy`.
