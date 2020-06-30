@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Isaam Malsky', // <title>
+  siteTitle: 'Isaac Malsky', // <title>
   manifestName: 'paradigmshift',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -14,17 +14,17 @@ module.exports = {
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/imalsky',
     },
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      url: 'https://twitter.com/isaacmalsky',
     },
     {
       icon: 'fa-facebook',
       name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://facebook.com/imalsky',
     },
   ],
   emailId: 'anubhav.srivastava00@gmail.com',
