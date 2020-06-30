@@ -29,9 +29,9 @@ Visit http://localhost:8000/ in a browser to see your site!
 
 In the future, you can run the site locally just by running `gatsby develop`.
 
-### Personalization
+### Editing
 
-Edit site content on `src/pages/index.js` and `config.js`.
+Edit site content on `src/pages/index.js` and `config.js`. Images live in the `assets/images/images` folder.
 
 ### Deployment
 
