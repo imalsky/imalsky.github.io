@@ -8,7 +8,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/favicon.png',
   heading: 'Isaac Malsky',
-  subHeading: 'Who is Isaac Malsky?',
+  subHeading: 'Graduate student & Hot Jupiter enthusiast',
   // social
   socialLinks: [
     {
