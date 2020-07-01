@@ -27,7 +27,7 @@ module.exports = {
       url: 'https://facebook.com/imalsky',
     },
   ],
-  emailId: 'anubhav.srivastava00@gmail.com',
-  phone: '020182389123',
-  address: '11 Ashiyana, Mumbai, India',
+  emailId: 'isaacmalsky@gmail.com',
+  phone: '',
+  address: '',
 };

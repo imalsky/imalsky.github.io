@@ -1,86 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../components/Layout';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import SideFooter from '../components/SideFooter';
+import Layout from '../components/Layout'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import SideFooter from '../components/SideFooter'
 
-import heroImage from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import Gallery from '../components/Gallery';
-import ContactForm from '../components/ContactForm';
-import { Link } from 'gatsby';
+import heroImage from '../assets/images/hero.jpg'
+import ages from '../assets/images/ages.png'
+import mr1 from '../assets/images/mr1.png'
+import mr2 from '../assets/images/mr2.png'
+import struct from '../assets/images/struct.png'
 
-const img_set_1 = [
-  {
-    src: require('../assets/images/gallery/fulls/01.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/01.jpg'),
-    title: 'Great Sky',
-    desc: 'Be one with the Universe',
-    full: true,
-  },
-  {
-    src: require('../assets/images/gallery/fulls/02.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/02.jpg'),
-    title: 'High Mountains',
-    desc: 'Be one with the mountains',
-  },
-  {
-    src: require('../assets/images/gallery/fulls/03.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/03.jpg'),
-    title: 'Any time ',
-    desc: 'Be one with the time',
-  },
-  {
-    src: require('../assets/images/gallery/fulls/04.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/04.jpg'),
-    title: 'Any source of light',
-    desc: 'Be one with the light',
-    full: true,
-  },
-];
-const img_set_2 = [
-  {
-    src: require('../assets/images/gallery/fulls/05.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/05.jpg'),
-    title: 'Any Curiosity',
-    desc: 'Be one with the curiosity',
-    full: true,
-  },
-  {
-    src: require('../assets/images/gallery/fulls/06.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/06.jpg'),
-    title: 'Any source of enlightenment',
-    desc: 'Be one with the soul',
-  },
-  {
-    src: require('../assets/images/gallery/fulls/07.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/07.jpg'),
-    title: 'Be in present',
-    desc: 'Be one with the present',
-  },
-];
-const img_set_3 = [
-  {
-    src: require('../assets/images/gallery/fulls/08.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/08.jpg'),
-    title: 'Give away',
-    desc: 'Be one with the empathy',
-  },
-  {
-    src: require('../assets/images/gallery/fulls/09.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/09.jpg'),
-    title: 'Moment',
-    desc: 'Be one with the moment',
-  },
-  {
-    src: require('../assets/images/gallery/fulls/10.jpg'),
-    thumbnail: require('../assets/images/gallery/thumbs/10.jpg'),
-    title: 'Serenity',
-    desc: 'Be one with the purity',
-    full: true,
-  },
-];
 const IndexPage = () => (
   <Layout>
     <div id="wrapper">
@@ -95,138 +25,90 @@ const IndexPage = () => (
 
       <section id="first">
         <header>
-          <h2>Magna sed nullam nisl adipiscing</h2>
+          <h2>About Me</h2>
+          <p>
+            <strong>I'm a second graduate student</strong> in the University of Michigan
+            Astronomy Department. I received my B.A. in Physics from the
+            University of Chicago in 2018.
+          </p>
         </header>
         <div className="content">
           <p>
-            <strong>Lorem ipsum dolor</strong> sit amet consectetur adipiscing
-            elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad
-            litora torquent per conubia nostra, per inceptos himenaeos. Etiam
-            tristique libero eu nibh porttitor amet fermentum. Nullam venenatis
-            erat id vehicula ultrices sed ultricies condimentum. Magna sed etiam
-            consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et
-            dolor libero, feugiat magna tempus, sed et lorem adipiscing.
+            I work on characterizing exoplanet atmospheres. My work at Michigan
+            focuses on three-dimensional modeling of 'Hot Jupiters'. This subset
+            of exoplanets are some of the best observational candidates due to
+            their tight in orbits and large size.
           </p>
+          <p>
+            I'm a big fan of science outreach. I coach for a Science Olympiad
+            team in Ann Arbor and mentor several undergraduates at the
+            University of Michigan for physics/astronomy advice. If I can
+            help at all with astronomy community or career advice related
+            questions, feel free to reach out to me at <strong>isaacmalsky@gmail.com</strong>!
+          </p>
+          <p>
+            I'm also interested in long distance running, crosswords, and boxing.
+            I use <a href="https://www.mypronouns.org/he-him">he/him/his pronouns</a>.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <header>
+          <h2>Research Content</h2>
+        </header>
+        <div className="content">
+          <section>
+            <header>
+              <h3>Coupled Thermal and Compositional Evolution of Photo Evaporating Planet Envelopes</h3>
+              <p>
+                The University of Chicago<br />
+                Advisers: Dr. Leslie Rogers
+              </p>
+            </header>
+            <div className="content">
+              <span className="image main">
+                <img src={mr2} alt="" />
+              </span>
+              <p>
+                Mass-Radius relations for planets of varying envelope fraction and helium content -- evolved for 5.0 Gyr without mass loss. In each panel we included simulations of a large number of planets with atmospheric helium fractions of 18%, 24%, 30%, 36%, and 40% as well as envelope mass fractions of 0.001 (purple), 0.010 (green), 0.025 (blue), 0.05 (pink), 0.10 (brown), 0.15 (light blue), and 0.20 (gold). The darker lines within each color grouping represent higher fractions of initial helium. The dotted black line in all figures represents the planetary core radius. All models were run with a host star temperature of 6000K, and envelope metal mass fraction Z=0.02. Differences in helium fraction caused significant radii differences for planets with large envelope fractions. Planets with smaller envelope fractions had much tighter Mass-Radius relations, as envelope added a smaller fraction to the planet's overall radius.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <header>
+              <h3>Modeling the high resolution emission spectra of non-transiting Upsilon Andromedae b</h3>
+              <p>
+                The University of Michigan<br />
+                Advisers: Dr. Emily Rauscher
+              </p>
+            </header>
+            <div className="content">
+              <span className="image main">
+                <img src={mr1} alt="" />
+              </span>
+              <p>
+                The advent of high resolution spectroscopy (R > 30,000) has expanded our capability to study non-transiting exoplanets, vastly increasing the number of planets accessible for observation. Models have generally simulated properties of hot Jupiters assuming edge on viewing, which is good for transiting planets, but neglects the large fraction of planets we can observe at larger inclinations. We use a General Circulation Model (GCM) to simulate the 3D structure of Upsilon Andromedae b - a bright non-transiting planet that has been well characterized. We then implement a ray-tracing radiative transfer model to study how emission spectra change with viewing inclination. By including the Doppler shifts in the radiative transfer post processing model, we study the effects of planetary winds and rotation on the emission spectra. We run 3D models of Upsilon Andromedae b with various cloud properties, and show that cloud coverage has a significant effect on the emission spectra. Furthermore,because cloud coverage is inhomogeneous, its effects are highly dependent on viewing inclination. We show that due to the inherent spatial variations within hot Jupiter atmospheres, models capable of treating inclination effects will be critical in understanding and analyzing results from high resolution emission spectra.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <SideFooter />
+        <header>
+          <h2>Get in touch</h2>
+        </header>
+        <div className="content">
           <span className="image main">
-            <img src={pic2} alt="" />
+            <img src={ages} alt="" />
+          </span>
+          <span className="image main">
+            <img src={struct} alt="" />
           </span>
         </div>
-      </section>
-
-      <section>
-        <header>
-          <h2>Feugiat consequat tempus ultrices</h2>
-        </header>
-        <div className="content">
-          <p>
-            <strong>Etiam tristique libero</strong> eu nibh porttitor amet
-            fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies
-            condimentum.
-          </p>
-          <ul className="feature-icons">
-            <li className="icon fa-laptop">Consequat tempus</li>
-            <li className="icon fa-bolt">Etiam adipiscing</li>
-            <li className="icon fa-signal">Libero nullam</li>
-            <li className="icon fa-gear">Blandit condimentum</li>
-            <li className="icon fa-map-marker">Lorem ipsum dolor</li>
-            <li className="icon fa-code">Nibh amet venenatis</li>
-          </ul>
-          <p>
-            Vehicula ultrices sed ultricies condimentum. Magna sed etiam
-            consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et
-            dolor libero, feugiat magna tempus, sed et lorem adipiscing.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h2>Ultrices erat magna sed condimentum</h2>
-        </header>
-        <div className="content">
-          <p>
-            <strong>Integer mollis egestas</strong> nam maximus erat id euismod
-            egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
-          </p>
-
-          <section>
-            <header>
-              <h3>Erat aliquam</h3>
-              <p>
-                Vehicula ultrices dolor amet ultricies et condimentum. Magna sed
-                etiam consequat, et lorem adipiscing sed dolor sit amet,
-                consectetur amet do eiusmod tempor incididunt ipsum suspendisse
-                ultrices gravida.
-              </p>
-            </header>
-            <div className="content">
-              <Gallery images={img_set_1} />
-            </div>
-          </section>
-
-          <section>
-            <header>
-              <h3>Nisl consequat</h3>
-              <p>
-                Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-                aliquam sed facilisis ante interdum congue. Integer mollis, nisl
-                amet convallis, porttitor magna ullamcorper, amet mauris. Ut
-                magna finibus nisi nec lacinia ipsum maximus.
-              </p>
-            </header>
-            <div className="content">
-              <div className="gallery">
-                <Gallery images={img_set_2} />
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <header>
-              <h3>Lorem gravida</h3>
-              <p>
-                Proin aliquam facilisis ante interdum. Sed nulla amet lorem
-                feugiat tempus aenean ornare velit lacus, ac varius sed enim
-                lorem ullamcorper dolore. ac varius enim lorem ullamcorper
-                dolore. Proin aliquam facilisis.
-              </p>
-            </header>
-            <div className="content">
-              <div className="gallery">
-                <Gallery images={img_set_3} />
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h2>Duis sed adpiscing veroeros amet</h2>
-        </header>
-        <div className="content">
-          <p>
-            <strong>Elements</strong> This starter contains all elements for a
-            page. Check it out
-          </p>
-          <ul className="actions">
-            <li>
-              <Link to="/Elements" className="button primary large">
-                Goto Elements Page
-              </Link>
-            </li>
-            {/* <li>
-              <a href="/#" className="button large">
-                Learn More
-              </a>
-            </li> */}
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <ContactForm />
-        <SideFooter />
       </section>
 
       <Footer />
