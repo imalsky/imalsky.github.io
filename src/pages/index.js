@@ -27,7 +27,7 @@ const IndexPage = () => (
         <header>
           <h2>About Me</h2>
           <p>
-            <strong>I'm a second graduate student</strong> in the University of Michigan
+            <strong>I'm a second year graduate student</strong> in the University of Michigan
             Astronomy Department. I received my B.A. in Physics from the
             University of Chicago in 2018.
           </p>
@@ -89,7 +89,7 @@ const IndexPage = () => (
                 <img src={mr1} alt="" />
               </span>
               <p>
-                The advent of high resolution spectroscopy (R > 30,000) has expanded our capability to study non-transiting exoplanets, vastly increasing the number of planets accessible for observation. Models have generally simulated properties of hot Jupiters assuming edge on viewing, which is good for transiting planets, but neglects the large fraction of planets we can observe at larger inclinations. We use a General Circulation Model (GCM) to simulate the 3D structure of Upsilon Andromedae b - a bright non-transiting planet that has been well characterized. We then implement a ray-tracing radiative transfer model to study how emission spectra change with viewing inclination. By including the Doppler shifts in the radiative transfer post processing model, we study the effects of planetary winds and rotation on the emission spectra. We run 3D models of Upsilon Andromedae b with various cloud properties, and show that cloud coverage has a significant effect on the emission spectra. Furthermore,because cloud coverage is inhomogeneous, its effects are highly dependent on viewing inclination. We show that due to the inherent spatial variations within hot Jupiter atmospheres, models capable of treating inclination effects will be critical in understanding and analyzing results from high resolution emission spectra.
+                The advent of high resolution spectroscopy (R > 30,000) has expanded our capability to study non-transiting exoplanets, vastly increasing the number of planets accessible for observation. Models have generally simulated properties of hot Jupiters assuming edge on viewing, which is good for transiting planets, but neglects the large fraction of planets we can observe at larger inclinations. We use a General Circulation Model (GCM) to simulate the 3D structure of Upsilon Andromedae b - a bright non-transiting planet that has been well characterized. We then implement a ray-tracing radiative transfer model to study how emission spectra change with viewing inclination. By including the Doppler shifts in the radiative transfer post processing model, we study the effects of planetary winds and rotation on the emission spectra. We run 3D models of Upsilon Andromedae b with various cloud properties, and show that cloud coverage has a significant effect on the emission spectra. Furthermore, because cloud coverage is inhomogeneous, its effects are highly dependent on viewing inclination. We show that due to the inherent spatial variations within hot Jupiter atmospheres, models capable of treating inclination effects will be critical in understanding and analyzing results from high resolution emission spectra.
               </p>
             </div>
           </section>
