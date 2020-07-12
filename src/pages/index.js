@@ -10,6 +10,7 @@ import ages from '../assets/images/ages.png'
 import mr1 from '../assets/images/mr1.png'
 import mr2 from '../assets/images/mr2.png'
 import struct from '../assets/images/struct.png'
+import crossword from '../assets/images/crossword.pdf'
 
 const IndexPage = () => (
   <Layout>
@@ -73,21 +74,15 @@ const IndexPage = () => (
               <p>
                 Mass-Radius relations for planets of varying envelope fraction and helium content -- evolved for 5.0 Gyr without mass loss. In each panel we included simulations of a large number of planets with atmospheric helium fractions of 18%, 24%, 30%, 36%, and 40% as well as envelope mass fractions of 0.001 (purple), 0.010 (green), 0.025 (blue), 0.05 (pink), 0.10 (brown), 0.15 (light blue), and 0.20 (gold). The darker lines within each color grouping represent higher fractions of initial helium. The dotted black line in all figures represents the planetary core radius. All models were run with a host star temperature of 6000K, and envelope metal mass fraction Z=0.02. Differences in helium fraction caused significant radii differences for planets with large envelope fractions. Planets with smaller envelope fractions had much tighter Mass-Radius relations, as envelope added a smaller fraction to the planet's overall radius.
               </p>
-            </div>
+            </div> 
+            
 
             <div className="content">
               <span className="image main">
                 <img src={crossword} alt="" />
               </span>
-            </div>
+            </div>          
           </section>
-
-
-
-
-
-
-
 
           <section>
             <header>
