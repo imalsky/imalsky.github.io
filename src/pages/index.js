@@ -10,7 +10,7 @@ import ages from '../assets/images/ages.png'
 import mr1 from '../assets/images/mr1.png'
 import mr2 from '../assets/images/mr2.png'
 import struct from '../assets/images/struct.png'
-import crossword from '../assets/images/crossword.pdf'
+import crossword from '../assets/images/crossword.png'
 
 const IndexPage = () => (
   <Layout>
@@ -81,7 +81,8 @@ const IndexPage = () => (
               <span className="image main">
                 <img src={crossword} alt="" />
               </span>
-            </div>          
+            </div>   
+
           </section>
 
           <section>
