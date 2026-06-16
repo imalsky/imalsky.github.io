@@ -1,313 +1,323 @@
-<!DOCTYPE HTML>
-<!--
-	Site for Isaac Malsky.
-	Built on "Miniport" by HTML5 UP (html5up.net | @ajlkn),
-	free for personal and commercial use under the CCA 3.0 license (html5up.net/license).
--->
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Isaac Malsky</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Isaac Malsky — NASA Postdoctoral Program Fellow at JPL studying exoplanet atmospheres, 3D general circulation models, radiative transfer, and atmospheric escape." />
+		<meta name="description" content="Isaac Malsky — NASA Postdoctoral Program Fellow at JPL studying exoplanet atmospheres, 3D general circulation models, radiative transfer, and machine learning." />
+		<meta name="author" content="Isaac Malsky" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Isaac Malsky" />
+		<meta property="og:description" content="NASA Postdoctoral Fellow at JPL — exoplanet atmospheres, 3D circulation models, and machine learning." />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="images/headshot.jpg" />
+
+		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='8.5' fill='%232766b0'/%3E%3Cellipse cx='16' cy='16' rx='14.5' ry='4.6' fill='none' stroke='%232766b0' stroke-width='2' transform='rotate(-20 16 16)'/%3E%3C/svg%3E" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#about">About</a></li>
+		<nav class="nav">
+			<div class="container">
+				<a class="brand" href="#top">Isaac Malsky</a>
+				<ul>
 					<li><a href="#research">Research</a></li>
 					<li><a href="#publications">Publications</a></li>
-					<li><a href="Isaac_Malsky_CV.pdf">CV</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="files/Isaac_Malsky_CV.pdf">CV</a></li>
 				</ul>
-			</nav>
+			</div>
+		</nav>
 
-		<!-- About -->
-			<article id="about" class="wrapper style1">
-				<div class="container">
-					<div class="row aln-center">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/profile.svg" alt="Isaac Malsky" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium aln-left">
-							<header>
-								<h1>Hi. I'm <strong>Isaac Malsky</strong>.</h1>
-							</header>
-							<p>I'm a NASA Postdoctoral Program (NPP) Fellow at NASA's <a href="https://www.jpl.nasa.gov/">Jet Propulsion Laboratory</a>, where I study the atmospheres of exoplanets. I build three-dimensional general circulation models (GCMs) of hot Jupiters and sub-Neptunes, model how clouds, hazes, and magnetic effects shape what we observe, and develop machine-learning tools to accelerate radiative transfer.</p>
-							<p>I completed my PhD in Astronomy at the University of Michigan in 2024, advised by Emily Rauscher, following a B.A. in Physics from the University of Chicago. <a href="mailto:isaacmalsky@gmail.com">Feel free to reach out</a>.</p>
-							<a href="#research" class="button large scrolly">See what I work on</a>
+		<!-- Hero / About -->
+		<header id="top" class="hero">
+			<div class="container">
+				<div class="hero-grid">
+					<img class="hero-photo" src="images/headshot.jpg" width="230" height="230" alt="Isaac Malsky" />
+					<div>
+						<h1>Isaac Malsky</h1>
+						<div class="title">NASA Postdoctoral Fellow &middot; Jet Propulsion Laboratory</div>
+						<p>I'm a NASA Postdoctoral Program Fellow at NASA's <a href="https://www.jpl.nasa.gov/">Jet Propulsion Laboratory</a>, where I study the atmospheres of exoplanets. I build three-dimensional general circulation models of hot Jupiters and sub-Neptunes, model how clouds, hazes, and magnetic effects shape what we observe, and develop machine-learning tools to accelerate radiative transfer and chemistry.</p>
+						<p>I earned my PhD in Astronomy &amp; Astrophysics from the University of Michigan in 2024, advised by Emily Rauscher, after a B.A. in Physics from the University of Chicago.</p>
+						<div class="links">
+							<a class="btn" href="files/Isaac_Malsky_CV.pdf"><i class="fas fa-file-alt"></i> Download CV</a>
+							<a class="iconlink" href="mailto:isaacmalsky@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+							<a class="iconlink" href="https://scholar.google.com/citations?user=8UH3LhoAAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+							<a class="iconlink" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Malsky%2C%20I.%22&sort=date%20desc" title="NASA ADS" aria-label="NASA ADS"><i class="fas fa-book"></i></a>
+							<a class="iconlink" href="https://orcid.org/0000-0003-0217-3880" title="ORCID" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+							<a class="iconlink" href="https://github.com/imalsky" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
 						</div>
 					</div>
 				</div>
-			</article>
+			</div>
+		</header>
 
 		<!-- Research -->
-			<article id="research" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Research</h2>
-						<p>I work on the physics of exoplanet atmospheres &mdash; connecting three-dimensional models to the spectra and phase curves we actually observe.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-6 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-globe"></span>
-								<h3>3D Atmospheric Circulation</h3>
-								<p>General circulation models of hot Jupiters and sub-Neptunes that link three-dimensional temperature, wind, and chemical structure to observable emission and transmission signatures.</p>
-							</section>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-cloud"></span>
-								<h3>Clouds, Hazes &amp; Radiative Transfer</h3>
-								<p>How radiatively active clouds, photochemical hazes, and the choice of radiative-transfer scheme reshape spectra &mdash; and how magnetic effects influence ultrahot Jupiters.</p>
-							</section>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-wind"></span>
-								<h3>Atmospheric Escape &amp; Evolution</h3>
-								<p>Photoevaporative mass loss and the coupled thermal and compositional evolution of planetary envelopes across the radius valley.</p>
-							</section>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-microchip"></span>
-								<h3>Machine Learning for Atmospheres</h3>
-								<p>Transformer-based emulators that accelerate radiative transfer for planetary atmospheres by orders of magnitude, making large model grids tractable.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p>Curious about a specific project? The papers below tell the full story.</p>
-						<a href="#publications" class="button large scrolly">Browse publications</a>
-					</footer>
+		<section id="research" class="section-pad bg-alt">
+			<div class="container">
+				<div class="section-head">
+					<span class="eyebrow">Research</span>
+					<h2>Atmospheres of other worlds</h2>
+					<p>I connect three-dimensional models of exoplanet atmospheres to the spectra and phase curves we observe &mdash; increasingly with the help of machine learning. A few representative first-author projects:</p>
 				</div>
-			</article>
+
+				<div class="cards">
+					<article class="card">
+						<div class="card-fig"><img src="images/research/ml-radiative-transfer.jpg" alt="Per-level error distribution of the transformer radiative-transfer emulator" loading="lazy" /></div>
+						<div class="card-body">
+							<div class="card-eyebrow">Machine learning &middot; 2025</div>
+							<h3><a href="https://arxiv.org/abs/2510.27050">Accelerating radiative transfer with transformers</a></h3>
+							<p>A transformer-based emulator reproduces layer-by-layer radiative fluxes to sub-percent accuracy while running orders of magnitude faster than conventional codes &mdash; making large atmospheric model grids tractable.</p>
+							<a class="more" href="https://arxiv.org/abs/2510.27050">Read the paper</a>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-fig"><img src="images/research/gj1214b-clouds.jpg" alt="3D temperature maps of GJ 1214 b for varying clouds, hazes, and metallicity" loading="lazy" /></div>
+						<div class="card-body">
+							<div class="card-eyebrow">The Astronomical Journal &middot; 2025</div>
+							<h3><a href="https://doi.org/10.3847/1538-3881/adb7e8">Clouds and hazes on GJ 1214 b</a></h3>
+							<p>Three-dimensional models of GJ 1214 b's metal-rich atmosphere, testing how clouds and photochemical hazes set its temperature structure and reproduce the planet's JWST phase curve.</p>
+							<a class="more" href="https://doi.org/10.3847/1538-3881/adb7e8">Read the paper</a>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-fig"><img src="images/research/rt-comparison.jpg" alt="East–west wind fields from double-gray versus multiwavelength circulation models" loading="lazy" /></div>
+						<div class="card-body">
+							<div class="card-eyebrow">The Astrophysical Journal &middot; 2024</div>
+							<h3><a href="https://doi.org/10.3847/1538-4357/ad0b70">How radiative transfer shapes 3D models</a></h3>
+							<p>A direct comparison of double-gray and multiwavelength radiative transfer in general circulation models, with and without radiatively active clouds, and the imprint each leaves on winds and spectra.</p>
+							<a class="more" href="https://doi.org/10.3847/1538-4357/ad0b70">Read the paper</a>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-fig"><img src="images/research/helium-radius-valley.jpg" alt="Mass–radius bands for helium-enhanced planets with observed planets overplotted" loading="lazy" /></div>
+						<div class="card-body">
+							<div class="card-eyebrow">Nature Astronomy &middot; 2023</div>
+							<h3><a href="https://doi.org/10.1038/s41550-022-01823-8">Helium-enhanced planets at the radius valley</a></h3>
+							<p>Photoevaporation can strip hydrogen faster than helium, enriching the envelopes of planets along the upper edge of the radius valley and reshaping their mass&ndash;radius relationship.</p>
+							<a class="more" href="https://doi.org/10.1038/s41550-022-01823-8">Read the paper</a>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-fig"><img src="images/research/highres-emission.jpg" alt="Modeled planetary hemispheres showing temperature and Doppler structure across orbital phase" loading="lazy" /></div>
+						<div class="card-body">
+							<div class="card-eyebrow">The Astrophysical Journal &middot; 2021</div>
+							<h3><a href="https://doi.org/10.3847/1538-4357/ac2a2a">High-resolution emission of cloudy hot Jupiters</a></h3>
+							<p>Modeled high-resolution emission spectra from 3D circulation models reveal how clouds and day&ndash;night structure leave detectable fingerprints in non-transiting hot Jupiters.</p>
+							<a class="more" href="https://doi.org/10.3847/1538-4357/ac2a2a">Read the paper</a>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-fig"><img src="images/research/photoevaporation.jpg" alt="Mass–radius tracks for photoevaporating planet envelopes at different envelope mass fractions" loading="lazy" /></div>
+						<div class="card-body">
+							<div class="card-eyebrow">The Astrophysical Journal &middot; 2020</div>
+							<h3><a href="https://doi.org/10.3847/1538-4357/ab873f">Atmospheric escape and envelope evolution</a></h3>
+							<p>Coupling photoevaporative mass loss to the thermal and compositional evolution of planetary envelopes traces how sub-Neptunes shrink and fractionate their atmospheres over gigayears.</p>
+							<a class="more" href="https://doi.org/10.3847/1538-4357/ab873f">Read the paper</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
 
 		<!-- Publications -->
-			<article id="publications" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Publications</h2>
-						<p>Selected refereed work. A complete, up-to-date list lives on <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Malsky%2C%20I.%22&sort=date%20desc">NASA ADS</a> and <a href="https://scholar.google.com/citations?user=8UH3LhoAAAAJ">Google Scholar</a>.</p>
-					</header>
-
-					<h3 class="pub-group">First-author</h3>
-					<ul class="pubs">
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://arxiv.org/abs/2510.27050">Accelerating Radiative Transfer for Planetary Atmospheres by Orders of Magnitude with a Transformer-Based Machine Learning Model</a>
-								<span class="pub-meta"><strong>Malsky, I.</strong>, Kataria, T., Batalha, N. E., &amp; Graham, M. &middot; <em>submitted</em> &middot; arXiv:2510.27050</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/adb7e8">Clouds and Hazes in GJ 1214 b's Metal-rich Atmosphere</a>
-								<span class="pub-meta"><strong>Malsky, I.</strong>, et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2024</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/ad0b70">A Direct Comparison between the Use of Double Gray and Multiwavelength Radiative Transfer in a General Circulation Model with and without Radiatively Active Clouds</a>
-								<span class="pub-meta"><strong>Malsky, I.</strong>, et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2022</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.1038/s41550-022-01823-8">Helium-enhanced Planets along the Upper Edge of the Radius Valley</a>
-								<span class="pub-meta"><strong>Malsky, I.</strong>, et al. &middot; Nature Astronomy</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2021</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/ac2a2a">Modeling the High-resolution Emission Spectra of Clear and Cloudy Nontransiting Hot Jupiters</a>
-								<span class="pub-meta"><strong>Malsky, I.</strong>, et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2020</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/ab873f">Coupled Thermal and Compositional Evolution of Photoevaporating Planet Envelopes</a>
-								<span class="pub-meta"><strong>Malsky, I.</strong> &amp; Rogers, L. A. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-					</ul>
-
-					<h3 class="pub-group">Co-authored</h3>
-					<ul class="pubs">
-						<li class="pub">
-							<span class="pub-year">2026</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/ae69ca">The Days Drag On on WASP-121 b: Interpreting Its NIRISS Spectroscopic Phase Curve with General Circulation Models</a>
-								<span class="pub-meta">Frazier, R. C., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/ae0ca9">Surprise Nondetection of Upsilon Andromedae b with MIRC-X and MYSTIC at the CHARA Array</a>
-								<span class="pub-meta">Gardner, T., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/adfb61">First Results from WINERED: Detection of Emission Lines from Neutral Iron and a Combined Set of Trace Species on the Dayside of WASP-189 b</a>
-								<span class="pub-meta">van Sluijs, L., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/adf328">Assessing Robustness and Bias in 1D Retrievals of 3D Global Circulation Models at High Spectral Resolution: A WASP-76 b Simulation Case Study in Emission</a>
-								<span class="pub-meta">van Sluijs, L., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/add3f6">Out on a Limb: The Signatures of East&ndash;West Asymmetries in Transmission Spectra from General Circulation Models</a>
-								<span class="pub-meta">Triantafillides, A., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/adc99a">The Radiative Effects of Photochemical Hazes on the Atmospheric Circulation and Phase Curves of Sub-Neptunes</a>
-								<span class="pub-meta">Steinrueck, M. E., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/adc0a4">An Analysis of Spitzer Phase Curves for WASP-121b and WASP-77Ab</a>
-								<span class="pub-meta">Davenport, B., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2025</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/ad9394">Radiatively Active Clouds and Magnetic Effects Explored in a Grid of Hot Jupiter GCMs</a>
-								<span class="pub-meta">Kennedy, T. D., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2024</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/ad434d">Two-dimensional Eclipse Mapping of the Hot Jupiter WASP-43b with JWST MIRI/LRS</a>
-								<span class="pub-meta">Hammond, M., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2023</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.1038/s41586-023-06159-5">A Reflective, Metal-rich Atmosphere for GJ 1214b from its JWST Phase Curve</a>
-								<span class="pub-meta">Kempton, E. M.-R., et al. &middot; Nature</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2023</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/acd24d">Magnetic Effects and 3D Structure in Theoretical High-resolution Transmission Spectra of Ultrahot Jupiters: the Case of WASP-76b</a>
-								<span class="pub-meta">Beltz, H., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2023</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/acaec5">A Lack of Variability between Repeated Spitzer Phase Curves of WASP-43b</a>
-								<span class="pub-meta">Murphy, M. M., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2023</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/acb141">Diagnosing Limb Asymmetries in Hot and Ultrahot Jupiters with High-resolution Transmission Spectroscopy</a>
-								<span class="pub-meta">Savel, A. B., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2022</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/ac897b">Magnetic Drag and 3D Effects in Theoretical High-resolution Emission Spectra of Ultrahot Jupiters: the Case of WASP-76b</a>
-								<span class="pub-meta">Beltz, H., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2022</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/ac6353">A Multiplanet System's Sole Super-puff: Exploring Allowable Physical Parameters for the Cold Super-puff HIP 41378 f</a>
-								<span class="pub-meta">Belkovski, M., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2021</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-4357/abdc22">Signatures of Clouds in Hot Jupiter Atmospheres: Modeled High-resolution Emission Spectra from 3D General Circulation Models</a>
-								<span class="pub-meta">Harada, C. K., et al. &middot; The Astrophysical Journal</span>
-							</div>
-						</li>
-						<li class="pub">
-							<span class="pub-year">2020</span>
-							<div class="pub-body">
-								<a class="pub-title" href="https://doi.org/10.3847/1538-3881/abbee6">Nondetection of Helium in the Upper Atmospheres of Three Sub-Neptune Exoplanets</a>
-								<span class="pub-meta">Kasper, D., et al. &middot; The Astronomical Journal</span>
-							</div>
-						</li>
-					</ul>
+		<section id="publications" class="section-pad">
+			<div class="container">
+				<div class="section-head">
+					<span class="eyebrow">Publications</span>
+					<h2>Selected refereed work</h2>
+					<div class="metrics">
+						<span><strong>5</strong>&nbsp;first-author papers</span>
+						<span><strong>800+</strong>&nbsp;citations</span>
+						<span>ADS&nbsp;<strong>h</strong>-index&nbsp;<strong>17</strong></span>
+					</div>
+					<p>The complete, up-to-date list lives on <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Malsky%2C%20I.%22&sort=date%20desc">NASA ADS</a> and <a href="https://scholar.google.com/citations?user=8UH3LhoAAAAJ">Google Scholar</a>.</p>
 				</div>
-			</article>
+
+				<h3 class="pub-group">First-author</h3>
+				<ul class="pubs">
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<span class="ptitle">Accelerating Chemical Kinetics for Exoplanet Atmospheres using Neural Networks</span> <span class="badge">in review</span>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Zhang, X., Kataria, T., Graham, M., et al. &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://arxiv.org/abs/2510.27050">Accelerating Radiative Transfer for Planetary Atmospheres by Orders of Magnitude with a Transformer-Based Machine Learning Model</a> <span class="badge">in review</span>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Kataria, T., Batalha, N. E., &amp; Graham, M. &middot; The Astrophysical Journal &middot; arXiv:2510.27050</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-3881/adb7e8">Clouds and Hazes in GJ 1214 b's Metal-rich Atmosphere</a>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Rauscher, E., Stevenson, K., et al. &middot; The Astronomical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2024</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/ad0b70">A Direct Comparison between the Use of Double Gray and Multiwavelength Radiative Transfer in a General Circulation Model with and without Radiatively Active Clouds</a>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Rauscher, E., Roman, M. T., et al. &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2023</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.1038/s41550-022-01823-8">Helium-enhanced Planets along the Upper Edge of the Radius Valley</a>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Rogers, L., Kempton, E. M.-R., et al. &middot; Nature Astronomy</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2021</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/ac2a2a">Modeling the High-resolution Emission Spectra of Clear and Cloudy Nontransiting Hot Jupiters</a>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Rauscher, E., Kempton, E. M.-R., et al. &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2020</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/ab873f">Coupled Thermal and Compositional Evolution of Photoevaporating Planet Envelopes</a>
+							<span class="pmeta"><strong>Malsky, I.</strong> &amp; Rogers, L. A. &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+				</ul>
+
+				<h3 class="pub-group">Selected co-authored</h3>
+				<ul class="pubs">
+					<li class="pub">
+						<span class="year">2026</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/ae69ca">The Days Drag On on WASP-121 b: Interpreting Its NIRISS Spectroscopic Phase Curve with General Circulation Models</a>
+							<span class="pmeta">Frazier, R. C., et al. (incl. <strong>Malsky, I.</strong>) &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2024</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.1038/s41550-024-02231-w">Nightside Clouds Form and Winds Drive Disequilibrium Chemistry on the Hot Jupiter WASP-43b</a>
+							<span class="pmeta">Bell, T. J., Crouzet, N., et al. (incl. <strong>Malsky, I.</strong>) &middot; Nature Astronomy</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-3881/adfb61">First Results from WINERED: Detection of Emission Lines from Neutral Iron and a Combined Set of Trace Species on the Dayside of WASP-189 b</a>
+							<span class="pmeta">van Sluijs, L., et al. (incl. <strong>Malsky, I.</strong>) &middot; The Astronomical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/adf328">Assessing Robustness and Bias in 1D Retrievals of 3D Global Circulation Models at High Spectral Resolution: A WASP-76 b Simulation Case Study in Emission</a>
+							<span class="pmeta">van Sluijs, L., Beltz, H., <strong>Malsky, I.</strong>, et al. &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/add3f6">Out on a Limb: The Signatures of East&ndash;West Asymmetries in Transmission Spectra from General Circulation Models</a>
+							<span class="pmeta">Triantafillides, A., et al. (incl. <strong>Malsky, I.</strong>) &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/adc99a">The Radiative Effects of Photochemical Hazes on the Atmospheric Circulation and Phase Curves of Sub-Neptunes</a>
+							<span class="pmeta">Steinrueck, M. E., et al. (incl. <strong>Malsky, I.</strong>) &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2025</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/ad9394">Radiatively Active Clouds and Magnetic Effects Explored in a Grid of Hot Jupiter GCMs</a>
+							<span class="pmeta">Kennedy, T. D., Rauscher, E., <strong>Malsky, I.</strong>, et al. &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2024</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-3881/ad434d">Two-dimensional Eclipse Mapping of the Hot Jupiter WASP-43b with JWST MIRI/LRS</a>
+							<span class="pmeta">Hammond, M., et al. (incl. <strong>Malsky, I.</strong>) &middot; The Astronomical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2023</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.1038/s41586-023-06159-5">A Reflective, Metal-rich Atmosphere for GJ 1214b from its JWST Phase Curve</a>
+							<span class="pmeta">Kempton, E. M.-R., et al. (incl. <strong>Malsky, I.</strong>) &middot; Nature</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2023</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-3881/acd24d">Magnetic Effects and 3D Structure in Theoretical High-resolution Transmission Spectra of Ultrahot Jupiters: the Case of WASP-76b</a>
+							<span class="pmeta">Beltz, H., Rauscher, E., Kempton, E. M.-R., <strong>Malsky, I.</strong>, et al. &middot; The Astronomical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2022</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-3881/ac897b">Magnetic Drag and 3D Effects in Theoretical High-resolution Emission Spectra of Ultrahot Jupiters: the Case of WASP-76b</a>
+							<span class="pmeta">Beltz, H., Rauscher, E., Kempton, E. M.-R., <strong>Malsky, I.</strong>, et al. &middot; The Astronomical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2021</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-4357/abdc22">Signatures of Clouds in Hot Jupiter Atmospheres: Modeled High-resolution Emission Spectra from 3D General Circulation Models</a>
+							<span class="pmeta">Harada, C. K., et al. (incl. <strong>Malsky, I.</strong>) &middot; The Astrophysical Journal</span>
+						</div>
+					</li>
+					<li class="pub">
+						<span class="year">2020</span>
+						<div class="body">
+							<a class="ptitle" href="https://doi.org/10.3847/1538-3881/abbee6">Nondetection of Helium in the Upper Atmospheres of Three Sub-Neptune Exoplanets</a>
+							<span class="pmeta">Kasper, D., Bean, J. L., Oklop&#269;i&#263;, A., <strong>Malsky, I.</strong>, et al. &middot; The Astronomical Journal</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 
 		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Get in touch</h2>
-						<p>Reach me at <a href="mailto:isaacmalsky@gmail.com">isaacmalsky@gmail.com</a>, or find my work and code below.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<ul class="actions special">
-								<li><a href="Isaac_Malsky_CV.pdf" class="button large">Download CV</a></li>
-							</ul>
-							<hr />
-							<ul class="social">
-								<li><a href="mailto:isaacmalsky@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://scholar.google.com/citations?user=8UH3LhoAAAAJ" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-								<li><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Malsky%2C%20I.%22&sort=date%20desc" class="icon solid fa-book"><span class="label">NASA ADS</span></a></li>
-								<li><a href="https://orcid.org/0000-0003-0217-3880" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
-								<li><a href="https://github.com/imalsky" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Isaac Malsky.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+		<section id="contact" class="contact section-pad">
+			<div class="container">
+				<div class="section-head">
+					<span class="eyebrow" style="color:#79b3ec">Get in touch</span>
+					<h2>Let's talk about atmospheres</h2>
+					<p>Reach me at <a href="mailto:isaacmalsky@gmail.com">isaacmalsky@gmail.com</a> &mdash; or find my work, code, and CV below.</p>
 				</div>
-			</article>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+				<ul class="social">
+					<li><a href="mailto:isaacmalsky@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="https://scholar.google.com/citations?user=8UH3LhoAAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
+					<li><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Malsky%2C%20I.%22&sort=date%20desc" title="NASA ADS" aria-label="NASA ADS"><i class="fas fa-book"></i></a></li>
+					<li><a href="https://orcid.org/0000-0003-0217-3880" title="ORCID" aria-label="ORCID"><i class="fab fa-orcid"></i></a></li>
+					<li><a href="https://github.com/imalsky" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+				</ul>
+				<div><a class="btn" href="files/Isaac_Malsky_CV.pdf"><i class="fas fa-file-alt"></i> Download CV</a></div>
+				<div class="foot">
+					<span>&copy; 2026 Isaac Malsky</span>
+					<span>NASA Jet Propulsion Laboratory</span>
+				</div>
+			</div>
+		</section>
 
 	</body>
 </html>

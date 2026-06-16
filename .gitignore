@@ -1,0 +1,10 @@
+# Local-only source assets (the published site uses the optimized copies).
+# Leading slash anchors to the repo root so images/headshot.jpg is NOT ignored
+# (macOS filesystems match case-insensitively).
+/Headshot.jpg
+/academic_cv.local.pdf
+/Picture.jpg
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

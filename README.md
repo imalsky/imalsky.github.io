@@ -1,8 +1,21 @@
 # imalsky.github.io
 
-Personal academic website for Isaac Malsky. Static single-page site built on the
-[Miniport](https://html5up.net/miniport) template by HTML5 UP (CCA 3.0 license — see
-`README.txt` / `LICENSE.txt`). No build step; everything is plain HTML/CSS/JS.
+Personal academic website for Isaac Malsky. A single static page — plain HTML/CSS, no
+build step, no framework. Type is [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+and icons are [Font Awesome Free](https://fontawesome.com/) 5.15.4.
+
+## Structure
+```
+index.html                 # the whole site (hero, research, publications, contact)
+assets/css/style.css       # all styling
+assets/css/fontawesome-*   # icon font (only solid + brands faces kept)
+assets/webfonts/           # woff2/woff for the icon font
+images/headshot.jpg        # cropped, web-sized headshot (800×800)
+images/research/*.jpg      # figure thumbnails pulled from first-author papers
+files/Isaac_Malsky_CV.pdf  # the CV linked from the nav and buttons
+```
+Local-only source files (`Headshot.jpg` original, `academic_cv.local.pdf`) are git-ignored;
+the committed site uses the optimized copies under `images/` and `files/`.
 
 ## Preview locally
 Run this from the project folder, then open http://localhost:8765
@@ -10,25 +23,20 @@ Run this from the project folder, then open http://localhost:8765
 python3 -m http.server 8765
 ```
 
-## Things to swap in
-- **Photo:** save your headshot as `images/profile.jpg`, then change `images/profile.svg`
-  to `images/profile.jpg` in `index.html` (the `#about` section). Until then a placeholder shows.
-- **CV:** replace `Isaac_Malsky_CV.pdf` in the root with your real CV (keep the same filename).
-- **Publications:** edit the `#publications` section of `index.html`. Each entry is one
-  `<li class="pub">` block with a year, a linked title, and an author/venue line. The list
-  was generated from your ORCID/ADS record (first-author papers + DOI links verified).
+## Updating
+- **Headshot:** replace `images/headshot.jpg` (a centered square crop displays as a circle).
+- **CV:** replace `files/Isaac_Malsky_CV.pdf` (keep the filename).
+- **Research highlights:** each is one `<article class="card">` in the `#research` section —
+  an image in `images/research/`, an eyebrow (journal · year), a linked title, a blurb.
+- **Publications:** edit the `#publications` section. Each entry is one `<li class="pub">`
+  with a year, a linked title (DOI), and an author/venue line.
 
 ## Deploy to GitHub Pages
-1. Create a new **public** repo on GitHub named exactly `imalsky.github.io` (leave it empty — no README).
-2. From this folder, run each line:
+The repo is named `imalsky.github.io`, so GitHub Pages serves it automatically from `main`.
+To publish changes:
 ```
-git init -b main
 git add -A
-git commit -m "Initial academic website"
-git remote add origin https://github.com/imalsky/imalsky.github.io.git
-git push -u origin main
+git commit -m "Update site"
+git push
 ```
-3. GitHub auto-enables Pages for `*.github.io` repos. The site goes live at
-   https://imalsky.github.io within a minute or two.
-
-To update later: edit files, then `git add -A`, `git commit -m "..."`, `git push`.
+The live site updates at https://imalsky.github.io within a minute or two.
