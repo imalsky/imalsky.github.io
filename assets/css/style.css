@@ -12,8 +12,6 @@
 	--accent:      #2766b0;
 	--accent-dark: #1b4d86;
 	--border:      #e4e8ee;
-	--dark:        #18212c;
-	--dark-soft:   #243140;
 	--maxw:        1080px;
 }
 
@@ -245,51 +243,15 @@ a.ptitle:hover { color: var(--accent); }
 	vertical-align: middle;
 }
 
-/* ---------- Beyond the papers ---------- */
-.beyond {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 2.2rem;
+/* ---------- Footer ---------- */
+.footer {
+	border-top: 1px solid var(--border);
+	background: var(--bg-alt);
+	padding: 1.6rem 0;
+	font-size: .88rem;
+	color: var(--muted);
 }
-.beyond-item h3 {
-	font-size: .82rem;
-	font-weight: 700;
-	letter-spacing: .12em;
-	text-transform: uppercase;
-	color: var(--accent);
-	margin-bottom: .6rem;
-}
-.beyond-item p { font-size: .95rem; color: var(--body); margin: 0; }
-
-/* ---------- Contact (dark) ---------- */
-.contact { background: var(--dark); color: #c6cfda; }
-.contact h2 { color: #fff; }
-.contact .section-head p { color: #9aa7b6; }
-.contact a { color: #79b3ec; }
-.contact a:hover { color: #a9d0f5; }
-.social { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.6rem 0 0; padding: 0; list-style: none; }
-.social a {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 46px; height: 46px;
-	border-radius: 9px;
-	border: 1px solid var(--dark-soft);
-	background: var(--dark-soft);
-	color: #c6cfda;
-	font-size: 1.15rem;
-	transition: all .15s ease;
-}
-.social a:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-2px); }
-.contact .btn { background: var(--accent); border-color: var(--accent); margin-top: 1.7rem; }
-.contact .btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
-
-.foot {
-	border-top: 1px solid var(--dark-soft);
-	margin-top: 3.2rem;
-	padding-top: 1.5rem;
-	font-size: .85rem;
-	color: #7e8b9b;
+.footer .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -313,5 +275,4 @@ a.ptitle:hover { color: var(--accent); }
 	.nav .container { justify-content: center; }
 	.pub { flex-direction: column; gap: .25rem; }
 	.pub .year { padding-top: 0; }
-	.beyond { gap: 1.7rem; }
 }

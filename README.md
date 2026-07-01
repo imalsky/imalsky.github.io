@@ -7,7 +7,7 @@ are [Font Awesome Free](https://fontawesome.com/) 5.15.4.
 
 ## Structure
 ```
-index.html                 # the whole site (hero, research, publications, beyond, contact)
+index.html                 # the whole site (hero, research, publications, footer)
 assets/css/style.css       # all styling
 assets/css/fontawesome-*   # icon font (only solid + brands faces kept)
 assets/webfonts/           # woff2/woff for the icon font
@@ -32,8 +32,6 @@ python3 -m http.server 8765
 - **Publications:** edit the `#publications` section. Each entry is one `<li class="pub">`
   with a year, a linked title (DOI), and an author/venue line. Keep each group in
   reverse-chronological order.
-- **Beyond the papers:** the `#beyond` section holds three short blocks — observing
-  programs, software, mentoring & service. Facts come from the CV; update them together.
 
 ## Deploy to GitHub Pages
 The repo is named `imalsky.github.io`, so GitHub Pages serves it automatically from `main`.
