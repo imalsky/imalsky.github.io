@@ -5,6 +5,9 @@
 /academic_cv.local.pdf
 /Picture.jpg
 
+# Private writing samples and unpublished drafts — never publish
+/Writing_Examples/
+
 # OS / editor noise
 .DS_Store
 Thumbs.db

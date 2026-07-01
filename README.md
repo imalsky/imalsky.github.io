@@ -1,12 +1,13 @@
 # imalsky.github.io
 
 Personal academic website for Isaac Malsky. A single static page — plain HTML/CSS, no
-build step, no framework. Type is [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-and icons are [Font Awesome Free](https://fontawesome.com/) 5.15.4.
+build step, no framework. Body type is [Open Sans](https://fonts.google.com/specimen/Open+Sans),
+headings are [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4), and icons
+are [Font Awesome Free](https://fontawesome.com/) 5.15.4.
 
 ## Structure
 ```
-index.html                 # the whole site (hero, research, publications, contact)
+index.html                 # the whole site (hero, research, publications, beyond, contact)
 assets/css/style.css       # all styling
 assets/css/fontawesome-*   # icon font (only solid + brands faces kept)
 assets/webfonts/           # woff2/woff for the icon font
@@ -29,7 +30,10 @@ python3 -m http.server 8765
 - **Research highlights:** each is one `<article class="card">` in the `#research` section —
   an image in `images/research/`, an eyebrow (journal · year), a linked title, a blurb.
 - **Publications:** edit the `#publications` section. Each entry is one `<li class="pub">`
-  with a year, a linked title (DOI), and an author/venue line.
+  with a year, a linked title (DOI), and an author/venue line. Keep each group in
+  reverse-chronological order.
+- **Beyond the papers:** the `#beyond` section holds three short blocks — observing
+  programs, software, mentoring & service. Facts come from the CV; update them together.
 
 ## Deploy to GitHub Pages
 The repo is named `imalsky.github.io`, so GitHub Pages serves it automatically from `main`.
