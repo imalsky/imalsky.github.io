@@ -382,24 +382,80 @@
 			<div class="container">
 				<div class="section-head">
 					<h2>Code</h2>
-					<p>Public software I have written or contributed to. Each one is archived on Zenodo and has its own DOI, so it can be cited.</p>
+					<p>Public software I have written or contributed to. Most of it models exoplanet atmospheres, or makes that modeling faster with machine learning. Everything here is on <a href="https://github.com/imalsky">GitHub</a>.</p>
 				</div>
 
+				<h3 class="pub-group">Atmospheric models</h3>
 				<ul class="pubs">
 					<li class="pub">
-						<span class="year">2024</span>
 						<div class="body">
-							<a class="ptitle" href="https://github.com/arjunsavel/hires-literature">hires-literature</a>
-							<span class="pmeta">Savel, A., Kempton, E. M.-R., Beltz, H., &amp; <strong>Malsky, I.</strong> &middot; <a href="https://doi.org/10.5281/zenodo.7063148">Zenodo</a></span>
-							<span class="pdesc">A public database of papers on high-resolution spectroscopy of exoplanet atmospheres. It covers both theory and observation. The list can be searched on the web, and each release is archived with a DOI.</span>
+							<a class="ptitle" href="https://github.com/imalsky/jax-vulcan">VULCAN-JAX</a>
+							<span class="pmeta">Python and JAX &middot; GPL-3.0</span>
+							<span class="pdesc">A JAX port of VULCAN, a one-dimensional chemical kinetics model for planetary atmospheres. It reads the same reaction networks and input files as the original, and runs on a CPU or a GPU. The model is differentiable, so gradients pass through the chemistry. A shared engine, <a href="https://github.com/imalsky/vulcan-forward">vulcan-forward</a>, connects it to ExoJAX radiative transfer.</span>
 						</div>
 					</li>
 					<li class="pub">
-						<span class="year">2023</span>
+						<div class="body">
+							<a class="ptitle" href="https://github.com/imalsky/vulcan-retrieval">vulcan-retrieval</a>
+							<span class="pmeta">Python and JAX &middot; GPL-3.0</span>
+							<span class="pdesc">An atmospheric retrieval framework built on VULCAN-JAX and ExoJAX. Gradients from the full forward model drive a sequential Monte Carlo sampler. It includes a worked example on JWST transmission data for WASP-39 b.</span>
+						</div>
+					</li>
+					<li class="pub">
+						<div class="body">
+							<a class="ptitle" href="https://github.com/imalsky/vulcan-jwst-tool">vulcan-jwst-tool</a>
+							<span class="pmeta">Python and JAX &middot; GPL-3.0</span>
+							<span class="pdesc">A JWST observation planner. It chains photochemistry, radiative transfer, and the STScI Pandeia noise model into a single forward calculation. Given a planet and a science goal, it ranks JWST modes and estimates how many transits are needed.</span>
+						</div>
+					</li>
+					<li class="pub">
+						<div class="body">
+							<a class="ptitle" href="https://github.com/imalsky/SWAMPE-JAX">SWAMPE-JAX</a>
+							<span class="pmeta">Python and JAX &middot; BSD-3-Clause</span>
+							<span class="pdesc">A JAX rewrite of the SWAMPE shallow-water model for planetary atmospheres. The solver is differentiable from end to end with respect to physical parameters and initial conditions. It matches the original NumPy version to within a small tolerance.</span>
+						</div>
+					</li>
+					<li class="pub">
 						<div class="body">
 							<a class="ptitle" href="https://github.com/emily-rauscher/RM-GCM">RM-GCM</a>
-							<span class="pmeta"><strong>Malsky, I.</strong>, Cowherd, M., Rauscher, E., et al. &middot; <a href="https://doi.org/10.5281/zenodo.7962910">Zenodo</a></span>
+							<span class="pmeta"><strong>Malsky, I.</strong>, Cowherd, M., Rauscher, E., et al. &middot; <a href="https://doi.org/10.5281/zenodo.7962910">Zenodo</a>, 2023</span>
 							<span class="pdesc">A three-dimensional general circulation model for the atmospheres of hot gas giant planets. I added multiwavelength radiative transfer and radiatively active clouds, and prepared the first public release. It produced the circulation models behind most of my first-author papers.</span>
+						</div>
+					</li>
+				</ul>
+
+				<h3 class="pub-group">Machine-learning emulators</h3>
+				<ul class="pubs">
+					<li class="pub">
+						<div class="body">
+							<a class="ptitle" href="https://github.com/imalsky/Problemulator">Problemulator</a>
+							<span class="pmeta">Python and PyTorch &middot; <a href="https://arxiv.org/abs/2510.27050">arXiv:2510.27050</a></span>
+							<span class="pdesc">A transformer emulator for radiative transfer, trained on output from PICASO. It maps one-dimensional atmospheric profiles to layer-by-layer fluxes in milliseconds instead of seconds. This is the code behind the transformer paper.</span>
+						</div>
+					</li>
+					<li class="pub">
+						<div class="body">
+							<a class="ptitle" href="https://github.com/imalsky/Chemulator">Chemulator</a>
+							<span class="pmeta">Python and PyTorch &middot; Malsky et al., submitted</span>
+							<span class="pdesc">A neural emulator for chemical kinetics in exoplanet atmospheres. It learns a single time step of a stiff chemical solver, so it can stand in for that solver inside a larger atmospheric model. This is the code behind the chemical kinetics paper.</span>
+						</div>
+					</li>
+				</ul>
+
+				<h3 class="pub-group">Tools</h3>
+				<ul class="pubs">
+					<li class="pub">
+						<div class="body">
+							<a class="ptitle" href="https://github.com/imalsky/vibe-check">vibe-check</a>
+							<span class="pmeta">Python &middot; MIT &middot; 2026 URSSI Fellowship</span>
+							<span class="pdesc">A small Python package that tests whether a machine-learning surrogate can be trusted. A low average error can still hide silent extrapolation, data leakage, and broken physical limits. The package turns those failure modes into clear validation reports.</span>
+						</div>
+					</li>
+					<li class="pub">
+						<div class="body">
+							<a class="ptitle" href="https://github.com/arjunsavel/hires-literature">hires-literature</a>
+							<span class="pmeta">Savel, A., Kempton, E. M.-R., Beltz, H., &amp; <strong>Malsky, I.</strong> &middot; <a href="https://doi.org/10.5281/zenodo.7063148">Zenodo</a>, 2024</span>
+							<span class="pdesc">A public database of papers on high-resolution spectroscopy of exoplanet atmospheres. It covers both theory and observation. The list can be searched on the web, and each release is archived with a DOI.</span>
 						</div>
 					</li>
 				</ul>
