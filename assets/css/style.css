@@ -98,15 +98,23 @@ section { scroll-margin-top: 72px; }
 	border: 1px solid var(--border);
 	box-shadow: 0 14px 38px rgba(24, 33, 44, .16);
 }
-.hero h1 { font-size: 2.85rem; letter-spacing: -.01em; margin-bottom: .3rem; }
-.hero .title {
-	font-size: .96rem;
+.hero h1 { font-size: 2.85rem; letter-spacing: -.01em; margin-bottom: .6rem; }
+.hero-email {
+	display: inline-flex;
+	align-items: center;
+	gap: .55rem;
+	font-size: 1.15rem;
 	font-weight: 700;
-	letter-spacing: .04em;
+	letter-spacing: -.005em;
 	color: var(--accent);
-	text-transform: uppercase;
-	margin-bottom: 1.3rem;
+	background: var(--bg-alt);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: .6rem 1.05rem;
+	margin-bottom: 1.1rem;
 }
+.hero-email:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
+.hero-email i { font-size: 1rem; }
 .hero p { max-width: 60ch; }
 .hero p:last-of-type { margin-bottom: 1.7rem; }
 .hero .lede {
@@ -272,6 +280,7 @@ a.ptitle:hover { color: var(--accent); }
 	.hero-grid { grid-template-columns: 1fr; gap: 1.8rem; justify-items: center; }
 	.hero p { margin-left: auto; margin-right: auto; }
 	.links { justify-content: center; }
+	.hero-email { font-size: 1.05rem; }
 	.hero h1 { font-size: 2.4rem; }
 }
 
