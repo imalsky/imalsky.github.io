@@ -30,7 +30,7 @@ committed site uses the optimized copies under `images/` and `files/`.
 
 **The CV is the source of truth.** It is the most complete of the three records, ahead of both this
 site and ORCID. The LaTeX source lives outside this repo at
-`~/Desktop/Isaac/Jobs/academic_cv/academic_cv.tex`; `files/Isaac_Malsky_CV.pdf` is the compiled copy.
+`~/Documents/CV/academic_cv/academic_cv.tex`; `files/Isaac_Malsky_CV.pdf` is the compiled copy.
 The publication list is not in that file — it is generated into `generated/publications.tex`.
 
 Whenever the CV gains a paper, add it here too. To check the site against the CV
